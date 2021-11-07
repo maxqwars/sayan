@@ -18,12 +18,12 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface ICommonAppSettings {
-  apiServer: string | null;
+  apiServerUrl: string | null;
   enableDoh: boolean | null;
 }
 
 const initialState = {
-  apiServer: null,
+  apiServerUrl: null,
   enableDoh: null,
 } as ICommonAppSettings;
 
@@ -31,8 +31,8 @@ const commonAppSettingsSlice = createSlice({
   name: "common-app-settings",
   initialState,
   reducers: {
-    setApiServer(state, action: PayloadAction<string | null>) {
-      state.apiServer = action.payload;
+    setApiServerUrl(state, action: PayloadAction<string | null>) {
+      state.apiServerUrl = action.payload;
     },
     setDoh(state, action: PayloadAction<boolean | null>) {
       state.enableDoh = action.payload;
@@ -40,5 +40,5 @@ const commonAppSettingsSlice = createSlice({
   },
 });
 
-export const { setApiServer, setDoh } = commonAppSettingsSlice.actions;
+export const { setApiServerUrl, setDoh } = commonAppSettingsSlice.actions;
 export default commonAppSettingsSlice.reducer;

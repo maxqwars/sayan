@@ -20,7 +20,7 @@ import React, { useEffect } from "react";
 import { ApiServerControl, ConfigSection, DoHControl } from "../components";
 import { useTranslation } from "react-i18next";
 import { useAppDispatch, useAppSelector } from "../redux/hooks";
-import { setApiServer } from "../slices/commonAppSettings";
+import { setApiServerUrl } from "../slices/commonAppSettings";
 import CommonAppSettingsService from "../services/CommonAppSettingsService";
 import { CENTERED_COLUMN_LAYOUT } from "../constants/CENTERED_COLUMN_LAYOUT";
 
@@ -28,31 +28,31 @@ interface IAppCommonSettingsControls {}
 
 const AppCommonSettingsControls = (props: IAppCommonSettingsControls) => {
   const { t } = useTranslation();
-  const apiServer = useAppSelector(
-    (state) => state.commonAppSettings.apiServer
+  const apiServerUrl = useAppSelector(
+    (state) => state.commonAppSettings.apiServerUrl
   );
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    if (apiServer === null) {
-      CommonAppSettingsService.getApiServer().then((value) =>
+    if (apiServerUrl === null) {
+      CommonAppSettingsService.getApiServerUrl().then((value) =>
         value === null
-          ? dispatch(setApiServer(""))
-          : dispatch(setApiServer(value))
+          ? dispatch(setApiServerUrl(""))
+          : dispatch(setApiServerUrl(value))
       );
     }
   });
 
   return (
     <ConfigSection title={t("commonAppSettingTitle")}>
-      {apiServer === null ? null : (
+      {apiServerUrl === null ? null : (
         <IonCol {...CENTERED_COLUMN_LAYOUT}>
           <ApiServerControl
-            currentUrl={apiServer}
+            currentUrl={apiServerUrl}
             onConfigPropertyChange={(url: string) => {
               console.log(url);
-              CommonAppSettingsService.setApiServer(url).then(() => {
-                dispatch(setApiServer(url));
+              CommonAppSettingsService.setApiServerUrl(url).then(() => {
+                dispatch(setApiServerUrl(url));
               });
             }}
           />

@@ -18,27 +18,31 @@
 import { Storage } from "@capacitor/storage";
 
 enum COMMON_SETTINGS_KEYS_ENUM {
-  API_SERVER = "API_SERVER", //? API SERVER BASE URL
+  API_SERVER = "API_SERVER_URL", //? API SERVER BASE URL
   ENABLE_DOH = "ENABLE_DOH", //? DOH - DNS OVER HTTPS
 }
 
 class CommonAppSettingsService {
-  async getApiServer() {
+  async getApiServerUrl() {
     const { value } = await Storage.get({
       key: COMMON_SETTINGS_KEYS_ENUM.API_SERVER,
     });
     return value;
   }
 
-  async setApiServer(url: string) {
+  async setApiServerUrl(url: string) {
     await Storage.set({
       key: COMMON_SETTINGS_KEYS_ENUM.API_SERVER,
       value: url,
     });
   }
 
-  getDoh() {}
-  setDoh() {}
+  async getDoh() {
+    const { value } = await Storage.get({ key: COMMON_SETTINGS_KEYS_ENUM.ENABLE_DOH })
+    return value
+  }
+  
+  async setDoh() {}
 }
 
 export default new CommonAppSettingsService();
