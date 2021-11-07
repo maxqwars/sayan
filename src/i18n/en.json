@@ -1,12 +1,14 @@
 {
-    "tab-bar-home-label": "Home",
-    "tab-bar-search-label": "Search",
-    "tab-bar-bookmarks-label": "Bookmarks",
-    "tab-bar-settings-label": "Settings",
-    "common-app-settings-title": "Common settings",
-    "api-server-input-placeholder-label": "API server URL",
-    "apply-label": "Apply",
-    "doh-label": "DNS-over-HTTPS",
-    "about-app-section-title": "About Sayan",
-    "about-app-section-text": "Sayan - free app for anime watching"
+  "tab-bar-home-label": "Home",
+  "tab-bar-search-label": "Search",
+  "tab-bar-bookmarks-label": "Bookmarks",
+  "tab-bar-settings-label": "Settings",
+  "common-app-settings-title": "Common settings",
+  "api-server-input-placeholder-label": "API server URL",
+  "apply-label": "Apply",
+  "doh-label": "DNS-over-HTTPS",
+  "about-app-section-title": "About Sayan",
+  "about-app-section-text": "Sayan - free app for anime watching",
+  "third-party-title": "Third party components",
+  "go-to-label": "Go"
 }

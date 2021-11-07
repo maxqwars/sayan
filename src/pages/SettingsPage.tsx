@@ -24,7 +24,7 @@ import {
 } from "@ionic/react";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { AboutApp } from "../components";
+import { AboutApp, ThirdParty } from "../components";
 import { AppCommonSettingsControls } from "../containers";
 
 interface ISettingsPageProps {}
@@ -41,6 +41,7 @@ const SettingsPage = (props: ISettingsPageProps) => {
       <IonContent fullscreen>
         <AppCommonSettingsControls />
         <AboutApp />
+        <ThirdParty />
       </IonContent>
     </IonPage>
   );

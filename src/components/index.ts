@@ -20,3 +20,4 @@ export { default as ConfigSection } from "./ConfigSection";
 export { default as ApiServerControl } from "./ApiServerControl";
 export { default as DoHControl } from "./DoHControl";
 export { default as AboutApp } from "./AboutApp";
+export { default as ThirdParty } from './ThirdParty'
