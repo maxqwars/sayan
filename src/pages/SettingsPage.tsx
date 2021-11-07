@@ -35,7 +35,7 @@ const SettingsPage = (props: ISettingsPageProps) => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>{t("tabBarSettingsLabel")}</IonTitle>
+          <IonTitle>{t("tab-bar-settings-label")}</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>

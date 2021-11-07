@@ -44,7 +44,7 @@ const AppCommonSettingsControls = (props: IAppCommonSettingsControls) => {
   });
 
   return (
-    <ConfigSection title={t("commonAppSettingTitle")}>
+    <ConfigSection title={t("common-app-settings-title")}>
       {apiServerUrl === null ? null : (
         <IonCol {...CENTERED_COLUMN_LAYOUT}>
           <ApiServerControl

@@ -1,13 +1,12 @@
 {
-    "welcomeMessage": "Welcome to Sayan (RU)",
-    "tabBarHomeLabel": "Домашняя",
-    "tabBarSearchLabel": "Поиск",
-    "tabBarBookmarksLabel": "Закладки",
-    "tabBarSettingsLabel": "Настройки",
-    "commonAppSettingTitle": "Основные настройки",
-    "api-server-input-placeholder-label": "URL API сервера",
+    "tab-bar-home-label": "Домашняя",
+    "tab-bar-search-label": "Поиск",
+    "tab-bar-bookmarks-label": "Закладки",
+    "tab-bar-settings-label": "Настройки",
+    "common-app-settings-title": "Настройки приложения",
+    "api-server-input-placeholder-label": "Адрес API сервера",
     "apply-label": "Применить",
     "doh-label": "DNS поверх HTTPS",
-    "about-app-section-title": "О Саяне",
-    "about-app-section-text": "Саян - свободное ПО для просмотра аниме"
+    "about-app-section-title": "Об Саяне",
+    "about-app-section-text": "Саян - открытое ПО для работы с AniLibria REST API."
 }

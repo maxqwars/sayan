@@ -33,7 +33,7 @@ const HomePage = (props: IHomePage) => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>{t("tabBarHomeLabel")}</IonTitle>
+          <IonTitle>{t("tab-bar-home-label")}</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>

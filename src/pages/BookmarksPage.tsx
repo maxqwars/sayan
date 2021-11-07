@@ -33,7 +33,7 @@ const BookmarksPage = (props: IBookmarksPageProps) => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>{t("tabBarBookmarksLabel")}</IonTitle>
+          <IonTitle>{t("tab-bar-bookmarks-label")}</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>

@@ -75,19 +75,19 @@ const App = () => {
           <IonTabBar slot="bottom">
             <IonTabButton tab="Home" href="/home">
               <IonIcon icon={homeOutline} />
-              <IonLabel>{t("tabBarHomeLabel")}</IonLabel>
+              <IonLabel>{t("tab-bar-home-label")}</IonLabel>
             </IonTabButton>
             <IonTabButton tab="Search" href="/search">
               <IonIcon icon={searchOutline} />
-              <IonLabel>{t("tabBarSearchLabel")}</IonLabel>
+              <IonLabel>{t("tab-bar-search-label")}</IonLabel>
             </IonTabButton>
             <IonTabButton tab="Bookmarks" href="/bookmarks">
               <IonIcon icon={bookmarkOutline} />
-              <IonLabel>{t("tabBarBookmarksLabel")}</IonLabel>
+              <IonLabel>{t("tab-bar-bookmarks-label")}</IonLabel>
             </IonTabButton>
             <IonTabButton tab="Settings" href="/settings">
               <IonIcon icon={settingsOutline} />
-              <IonLabel>{t("tabBarSettingsLabel")}</IonLabel>
+              <IonLabel>{t("tab-bar-settings-label")}</IonLabel>
             </IonTabButton>
           </IonTabBar>
         </IonTabs>

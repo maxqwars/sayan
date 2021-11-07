@@ -33,7 +33,7 @@ const SearchPage = (props: ISearchPageProps) => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>{t("tabBarSearchLabel")}</IonTitle>
+          <IonTitle>{t("tab-bar-search-label")}</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
