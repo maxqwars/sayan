@@ -15,35 +15,30 @@
 // You should have received a copy of the GNU General Public License
 // along with sayan-app.  If not, see <http://www.gnu.org/licenses/>.
 
-import {
-  IonPage,
-  IonContent,
-  IonToolbar,
-  IonTitle,
-  IonHeader,
-} from "@ionic/react";
+import { IonCard, IonCardContent, IonCol, IonText } from "@ionic/react";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { AboutApp } from "../components";
-import { AppCommonSettingsControls } from "../containers";
+import { ConfigSection } from ".";
+import { CENTERED_COLUMN_LAYOUT } from "../constants/CENTERED_COLUMN_LAYOUT";
+import aboutCoverImage from "../assets/about-cover.svg";
 
-interface ISettingsPageProps {}
+interface IAboutAppProps {}
 
-const SettingsPage = (props: ISettingsPageProps) => {
+const AboutApp = (props: IAboutAppProps) => {
   const { t } = useTranslation();
+
   return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>{t("tabBarSettingsLabel")}</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent fullscreen>
-        <AppCommonSettingsControls />
-        <AboutApp />
-      </IonContent>
-    </IonPage>
+    <ConfigSection title={t("about-app-section-title")}>
+      <IonCol {...CENTERED_COLUMN_LAYOUT}>
+        <IonCard>
+          <img src={aboutCoverImage} alt="" />
+          <IonCardContent>
+            <IonText>{t("about-app-section-text")}</IonText>
+          </IonCardContent>
+        </IonCard>
+      </IonCol>
+    </ConfigSection>
   );
 };
 
-export default SettingsPage;
+export default AboutApp;

@@ -27,11 +27,12 @@ const appRoutes = (props: IRoutesProp) => {
     <>
       {props.appRoutes.map((route) =>
         route.redirect ? (
-          <Route path={route.path}>
+          <Route path={route.path} key={route.path}>
             <Redirect to={route.redirect} />
           </Route>
         ) : (
           <Route
+            key={route.path}
             path={route.path}
             exact={route.exact}
             component={route.component}

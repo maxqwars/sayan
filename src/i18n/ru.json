@@ -4,5 +4,10 @@
     "tabBarSearchLabel": "Поиск",
     "tabBarBookmarksLabel": "Закладки",
     "tabBarSettingsLabel": "Настройки",
-    "commonAppSettingTitle": "Основные настройки"
+    "commonAppSettingTitle": "Основные настройки",
+    "api-server-input-placeholder-label": "URL API сервера",
+    "apply-label": "Применить",
+    "doh-label": "DNS поверх HTTPS",
+    "about-app-section-title": "О Саяне",
+    "about-app-section-text": "Саян - свободное ПО для просмотра аниме"
 }

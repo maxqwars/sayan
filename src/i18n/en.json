@@ -4,5 +4,10 @@
     "tabBarSearchLabel": "Search",
     "tabBarBookmarksLabel": "Bookmarks",
     "tabBarSettingsLabel": "Settings",
-    "commonAppSettingTitle": "Common settings"
+    "commonAppSettingTitle": "Common settings",
+    "api-server-input-placeholder-label": "API server URL",
+    "apply-label": "Apply",
+    "doh-label": "DNS-over-HTTPS",
+    "about-app-section-title": "About Sayan",
+    "about-app-section-text": "Sayan - free app for anime watching"
 }

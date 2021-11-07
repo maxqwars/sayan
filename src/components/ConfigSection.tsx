@@ -15,9 +15,8 @@
 // You should have received a copy of the GNU General Public License
 // along with sayan-app.  If not, see <http://www.gnu.org/licenses/>.
 
-import { IonRow, IonCol } from "@ionic/react";
+import { IonRow, IonGrid, IonTitle } from "@ionic/react";
 import React from "react";
-import { CENTERED_COLUMN_LAYOUT } from "../constants/CENTERED_COLUMN_LAYOUT";
 
 interface IConfigSectionProps {
   title: string;
@@ -27,12 +26,14 @@ interface IConfigSectionProps {
 const ConfigSection = (props: IConfigSectionProps) => {
   const { title, children } = props;
   return (
-    <IonRow>
-      <IonCol {...CENTERED_COLUMN_LAYOUT} className="ion-text-center">
-        <h2>{title}</h2>
-      </IonCol>
-      <IonCol {...CENTERED_COLUMN_LAYOUT}>{children}</IonCol>
-    </IonRow>
+    <IonGrid>
+      <IonRow>
+        <IonTitle className="ion-text-center">
+          <h2>{title}</h2>
+        </IonTitle>
+      </IonRow>
+      <IonRow>{children}</IonRow>
+    </IonGrid>
   );
 };
 

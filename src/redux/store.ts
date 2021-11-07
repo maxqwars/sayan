@@ -16,11 +16,11 @@
 // along with sayan-app.  If not, see <http://www.gnu.org/licenses/>.
 
 import { configureStore } from '@reduxjs/toolkit'
-import testSlice from './testSlice'
+import commonAppSettings from '../slices/commonAppSettings'
 
 const store = configureStore({
   reducer: {
-    testSlice
+    commonAppSettings
   },
   devTools: process.env.NODE_ENV === 'development'
 })
